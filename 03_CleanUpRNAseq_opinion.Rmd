@@ -1,1 +1,14 @@
+# CleanUpRNAseq opinion
+_29 de enero de 2025_
 
+Es un buen paquete con bastante potencial para determinar si hay 
+contaminación de DNA en los datos de RNA-seq.  
+
+Es un paquete que actualmente tiene un buen soporte, con atención 
+constante de parte de la desarrolladora y del equipo de Bioconductor.  
+
+Una oportunidad de mejora es la documentación. Sería de gran ayuda que hubiera comentarios en el código y una explicación de los ejes de las gráficas que genera el paquete.  
+
+Por lo demás es una gran herramienta que puede ser de gran ayuda para los análisis de RNA-seq.  
+
+El repositorio de esta herramienta se encuentra en <https://github.com/haibol2016/CleanUpRNAseq>.
