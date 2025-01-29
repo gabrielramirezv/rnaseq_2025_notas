@@ -17,4 +17,15 @@ if (!require("BiocManager", quietly = TRUE))
 
 BiocManager::install("DOSE")
 ```  
-- `browseVignettes("iCARE")`: Acceder a documentación del paquete.
+- `browseVignettes("iCARE")`: Acceder a documentación del paquete.  
+
+Es importante explorar los didtintos paquetes disponibles, pues siempre 
+se puede encontrar algo nuevo que resulte útil para nuestras necesidades. 
+Como algo opcional, es aconsejable crear un blog personal con los 
+paquetes que más resulten de nuestro agrado.  
+
+Con el fin de mantenerse actualizado, se recomienda explorar la página 
+de Bioconductor, donde se publican videos explicando paquetes y funciones, 
+así como avisos de congresos, talleres y eventos futuros. Además, hay un 
+Slack disponible para estar en contacto constante con colaboradores de 
+Bioconductor.  
