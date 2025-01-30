@@ -42,9 +42,9 @@ proj_info_interactive <- interactiveDisplayBase::display(human_projects)
 # ## Selecciona un solo renglón en la tabla y da click en "send".
 #
 # ## Aquí verificamos que solo seleccionaste un solo renglón.
-# stopifnot(nrow(proj_info_interactive) == 1)
+stopifnot(nrow(proj_info_interactive) == 1)
 # ## Crea el objeto RSE
-# rse_gene_interactive <- create_rse(proj_info_interactive)
+rse_gene_interactive <- create_rse(proj_info_interactive)
 
 
 ## ----"tranform_counts"----------------------------------------
@@ -62,3 +62,8 @@ colData(rse_gene_SRP009615)[
   ,
   grepl("^sra_attribute", colnames(colData(rse_gene_SRP009615)))
 ]
+
+# Visualización con iSEE
+library("iSEE")
+iSEE::iSEE(rse_gene_SRP009615)
+## La gráfica resultante se encuentra en figures/
