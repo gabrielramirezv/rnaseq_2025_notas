@@ -1,0 +1,9 @@
+# Datos de RNA-seq a través de recount3  
+_30 de enero de 2025_  
+
+_recount3_ es un recurso de datos de RNA-seq que proporciona acceso a datos de 
+RNA-seq de alta calidad y mapeados a nivel de gen y transcrito. Los datos de 
+_recount3_ se han generado a partir de datos de RNA-seq.  
+
+En esta página puede escogerse alguna muestra de RNA-seq para poder 
+analizarla.  
