@@ -1,1 +1,33 @@
+# Introducción a R y Rstudio  
+_28 de enero de 2025_  
 
+## R
+R es un lenguaje gratis y de acceso libre, ampliamente usado en el campo de la bioinformática.  
+Hay diferentes blogs y páginas que permiten acceso a información de actualizaciones de herramientas relacionadas con este lenguaje de programación.  
+También, hay varios canales para pedir ayuda. En este sentido, es importante evitar usar _screenshots_, usar código reproducible en otros dispositivos, apoyarnos de herramientas como `reprex` y el lenguaje Markdown, y proporcionar nuestra información de la sesión de R. Todo lo anterior contribuye a que otras personas puedan reproducir más fácilmente nuestro código con el fin de ayudarnos.  
+
+## GitHub  
+GitHub es una gran herramienta para versionar y compartir código, además de tener páginas web estáticas por medio de _postcards_.  
+
+## AI para escribir código  
+Con GitHub Copilot se puede recibir ayuda de AI para escribir código. Las maneras de conectar con la AI es por medio de una de las opciones siguientes:  
+- `chattr::chattr_app()`: Despliega una ventana para chatear con la AI.
+- Chatear desde terminal con el código siguiente:
+```{r}
+library("ellmer")
+chat <- chat_github()
+live_console(chat)
+```
+- `pal`: Otra librería que ayuda en tareas más complejas.
+
+## RStudio  
+Algunos comandos importantes para trabajar desde RStudio son:  
+- `usethis::create_project("~/Desktop/rnaseq_2025_notas")`: Crea un proyecto en la ruta proporcionada.  
+- `usethis::use_r("01-notas.R")`: Crea un archivo de R.  
+- `sessioninfo::session_info()`: Proporciona información de la sesión.
+- `here::here("figuras")`: Da una ruta relativa, permitiendo hacer un código reproducible.
+- `usethis::create_github_token()`: Genera el token para conectar con GitHub.
+- `gitcreds::gitcreds_set()`: Recibe el token de Git.
+- `usethis::edit_git_config()`: Configurar usuario de Git.
+- `usethis::use_git()`: Inicializar un repositorio.
+- `usethis::use_github()`: Conectar con GitHub.
