@@ -1,5 +1,5 @@
 ---
-title: "Parkinson's Disease RNA-Seq analysis"
+title: "RNAseq 2025"
 author: "Gabriel Ramirez-Vilchis"
 date: "`r Sys.Date()`"
 output: 
@@ -9,7 +9,6 @@ output:
     number_sections: true
     highlight: tango
 toc-title: "Table of contents"
-bibliography: ./references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -31,7 +30,7 @@ GitHub es una gran herramienta para versionar y compartir código, además de te
 Con GitHub Copilot se puede recibir ayuda de AI para escribir código. Las maneras de conectar con la AI es por medio de una de las opciones siguientes:  
 - `chattr::chattr_app()`: Despliega una ventana para chatear con la AI.
 - Chatear desde terminal con el código siguiente:
-```{r}
+```{r, eval = FALSE}
 library("ellmer")
 chat <- chat_github()
 live_console(chat)
@@ -49,3 +48,73 @@ Algunos comandos importantes para trabajar desde RStudio son:
 - `usethis::edit_git_config()`: Configurar usuario de Git.
 - `usethis::use_git()`: Inicializar un repositorio.
 - `usethis::use_github()`: Conectar con GitHub.
+
+# Bioconductor
+_29 de enero de 2025_  
+
+Bioconductor se ocupa de desarrollar paquetes de R que son útiles para 
+el análisis de datos en bioinformática.  
+
+Dentro de la página web de Bioconductor pueden encontrarse los paquetes 
+clasificados según su función y utilidad. Una ventaja de Bioconductor 
+sobre los paquetes de CRAN es que se encuentran mejor documentados y 
+son revisados de una forma más periódica y constante.  
+
+Algunos comandos importantes son:  
+- Instalar paquetes:  
+```{r, eval = FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("DOSE")
+```  
+- `browseVignettes("iCARE")`: Acceder a documentación del paquete.  
+
+Es importante explorar los didtintos paquetes disponibles, pues siempre 
+se puede encontrar algo nuevo que resulte útil para nuestras necesidades. 
+Como algo opcional, es aconsejable crear un blog personal con los 
+paquetes que más resulten de nuestro agrado.  
+
+Con el fin de mantenerse actualizado, se recomienda explorar la página 
+de Bioconductor, donde se publican videos explicando paquetes y funciones, 
+así como avisos de congresos, talleres y eventos futuros. Además, hay un 
+Slack disponible para estar en contacto constante con colaboradores de 
+Bioconductor.  
+
+# CleanUpRNAseq opinion
+_29 de enero de 2025_
+
+Es un buen paquete con bastante potencial para determinar si hay 
+contaminación de DNA en los datos de RNA-seq.  
+
+Es un paquete que actualmente tiene un buen soporte, con atención 
+constante de parte de la desarrolladora y del equipo de Bioconductor.  
+
+Una oportunidad de mejora es la documentación. Sería de gran ayuda que hubiera comentarios en el código y una explicación de los ejes de las gráficas que genera el paquete.  
+
+Por lo demás es una gran herramienta que puede ser de gran ayuda para los análisis de RNA-seq.  
+
+El repositorio de esta herramienta se encuentra en <https://github.com/haibol2016/CleanUpRNAseq>.
+
+# Datos de RNA-seq a través de recount3  
+_30 de enero de 2025_  
+
+_recount3_ es un recurso de datos de RNA-seq que proporciona acceso a datos de 
+RNA-seq de alta calidad y mapeados a nivel de gen y transcrito. Los datos de 
+_recount3_ se han generado a partir de datos de RNA-seq.  
+
+En esta página puede escogerse alguna muestra de RNA-seq para poder 
+analizarla.  
+
+# Análisis de expresión diferencial  
+_31 de enero de 2025_  
+
+Para realizar un análisis de expresión diferencial, debe construirse un 
+modelo. En este sentido, puede comprenderse mejor lo que significa cada una de 
+las columnas de la matriz. Para ello, la función `ExploreModelMatrix` es de 
+gran ayuda para comprender la estructura de la matriz y cómo se relacionan 
+las columnas entre sí.  
+
+En el análisis de expresión diferencial, es importante visualizar los datos y 
+un volcano plot es una gran opción para hacerlo. Es la más comúnmente usada 
+hoy en día, y permite resaltar los genes más diferencialmente expresados.

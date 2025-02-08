@@ -1,0 +1,12 @@
+# Análisis de expresión diferencial  
+_31 de enero de 2025_  
+
+Para realizar un análisis de expresión diferencial, debe construirse un 
+modelo. En este sentido, puede comprenderse mejor lo que significa cada una de 
+las columnas de la matriz. Para ello, la función `ExploreModelMatrix` es de 
+gran ayuda para comprender la estructura de la matriz y cómo se relacionan 
+las columnas entre sí.  
+
+En el análisis de expresión diferencial, es importante visualizar los datos y 
+un volcano plot es una gran opción para hacerlo. Es la más comúnmente usada 
+hoy en día, y permite resaltar los genes más diferencialmente expresados.
